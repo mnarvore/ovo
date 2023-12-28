@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ovo</title>
+    <script type="text/javascript">
+        const calcularovos = () => {
+            // Corrigindo o acesso aos elementos do formulário
+            const ovospessoa = parseInt(document.getElementById("ovosmc").value) || 0;
+            const ovosmeta = parseInt(document.getElementById("ovosmeta").value) || 0;
+            const resultado = ovosmeta - ovospessoa;
+
+            // Concatenando as strings corretamente
+            alert("Você tem " + ovospessoa + " ovos.\nSua meta é " + ovosmeta + " ovos.\nVocê precisa de mais " + resultado + " ovos para atingir a meta.");
+        }
+    </script>
+</head>
+
+<body>
+    <form id="imcovos" name="imcovos" action="#">
+        <label for="ovospessoa">Quantos ovos você tem?:</label>
+        <input type="text" id="ovosmc" name="ovosmc">
+        <br>
+
+        <label for="ovosmeta">Quantos ovos você quer ter?</label>
+        <input type="text" id="ovosmeta" name="ovosmeta">
+        <br>
+
+        <input type="button" value="Calcular" onclick="calcularovos()">
+    </form>
+
+    <p>OVO</p>
+    <!-- Corrigindo o caminho da imagem -->
+    <img src="C:\Users\eloso\a\ovo.webp" alt="ovo">
+</body>
+
+</html>
+```
+
